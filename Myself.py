@@ -1,0 +1,5 @@
+print("Hello!")
+print("My name is Shauryaa Shashikant Wagh.")
+print("I study in grade 6.")
+print(" I am 12 years old.")
+print("Thank you!")
