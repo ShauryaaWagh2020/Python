@@ -1,11 +1,14 @@
-Medical_Cause = input("Did you have any Medical cause? Y/N: ").strip().upper()
+lower = int(input("Enter thr lower range: "))
+upper = int(input("Enetr the upper range: "))
 
-if Medical_Cause=='Y':
-    print("Allowed")
+print("Prime numbers between range",lower,"and",upper,"are: ")
 
-else:
-    Attendence = int(input("Enter the Attendence: "))
-    if Attendence >=75:
-        print("Allowed")
-    else: 
-        print("Not allowed")
+for num in range(lower,upper + 1):
+
+  if num>1:
+        for i in range(2,num):
+            if num % i == 0:
+                break
+
+        else:
+            print(num)
